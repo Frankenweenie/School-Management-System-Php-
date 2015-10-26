@@ -1,250 +1,1108 @@
-      body, html {
-          height: 100%;
-          margin: 0;
-          overflow:hidden;
-          font-family: helvetica;
-          font-weight: 100;
-		  background:#FAFAFA;
-      }
-      .container {
-		  margin-top:80px;
-          position: relative;
-          height: 100%;
-          width: 100%;
-      }
-      
-      #sidebar {
+body, html {
+height: 100%;
+margin: 0;
+overflow:hidden;
+font-family: helvetica;
+font-weight: 100;
+background:#FAFAFA;
+}
+.container {
+margin-top:80px;
+position: relative;
+height: 100%;
+width: 100%;
+}
+
+#sidebar {
+position: absolute;
+background: #3399cc;
+width: 300px;
+height: 100%;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+}
+#sidebar ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+#sidebar ul li {
+margin: 0;
+border-bottom: 1px solid #567;
+}
+#sidebar ul li a {
+padding: 15px 20px;
+font-size: 16px;
+font-weight: 100;
+color: white;
+text-decoration: none;
+display: block;
+
+-webkit-transition:  background 0.3s ease-in-out;
+-moz-transition:  background 0.3s ease-in-out;
+-ms-transition:  background 0.3s ease-in-out;
+-o-transition:  background 0.3s ease-in-out;
+transition:  background 0.3s ease-in-out;
+}
+#sidebar ul li:hover a {
+background: #FAFAFA;
+color:#3399cc;
+}
+.main-content {
+width: 100%;
+height: 100%;
+padding: 10px 10px 10px 260px;
+box-sizing: border-box;
+position: relative;
+}
+/*********************Header****************************/
+
+#header{
+width:100%;
+height:80px;
+background:linear-gradient(white,#fafafa);
+position:absolute;
+top:0;
+left:0;
+z-index:999;
+box-shadow:1px -5px 20px;
+}
+#logo{
+margin-top:10px;
+}
+#a1{
+vertical-align:18px;
+font-size:23px;
+font-family:sans-serif;
+}
+#a2{
+margin-left:10px;
+font-size:15px;
+vertical-align:15px;
+font-family:sans-serif;
+}
+#user{
+position:absolute;
+right:20px;
+top:20px;
+}
+
+#hangai{
+border-radius:10em;
+}
+
+/*********************Header****END***************************************/
+#main{
+background:white;
+position:absolute;
+left:350px;
+top:120px;
+min-width:700px;
+right:25px;
+height:100%;
+overflow:scroll;
+}
+#att_frame{
+position:absolute;
+background:white;
+width:;
+height:50px;
+margin-top:25px;
+right:10px;
+left:10px;
+border-bottom:#cfcfcf 1px solid;
+}
+#att_title{
+color:black;
+margin-left:30px;
+margin-top:10px;
+background:white;
+height:40px;
+width:100px;
+text-align:center;
+border:#cfcfcf 1px solid;
+border-bottom:none;
+}
+#att_title a{
+vertical-align:-25px;
+font-family:sans-serif;
+font-size:14;
+}
+/************SELECTING***DATE**********SELECTING***CLASS********STARTS***************************/
+
+#currentDate{
+position:absolute;
+top:120px;
+left:25px;
+}
+#currentDate a{
+color:;
+vertical-align:15px;
+
+}
+#selectClass a{
+color:;
+vertical-align:15px;
+
+}
+#selectClass select{
+border:#cfcfcf 1px solid;
+height:30px;
+width:130px;
+}
+#main input{
+border:#cfcfcf 1px solid;
+height:30px;
+width:140px;
+}
+#selectClass{
+position:absolute;
+top:120px;
+left:250px;
+}
+#btn1{
+position:absolute;
+top:148px;
+left:500px;
+height:30px;
+background-color:#3399cc;
+border:none;
+color:white;
+transition:0.5s;
+}
+#btn1:hover{
+cursor:pointer;
+background:white;
+border:#3399cc 1px solid;
+color:#3399cc;
+transition:0.3s;
+
+}
+/************SELECTING**********DATE**********SELECTING**********CLASS********ENDS***************************/
+
+#att_table{
+position:absolute;
+top:230px;
+left:25px;
+border-collapse:collapse;
+}
+#att_table input[type="radio"]{
+height:15px;
+width:15px;
+
+}
+
+#att_table tr:last-child{
+height:35px;
+border-bottom:white 11px solid;
+
+
+}
+#att_table td{
+height:35px;
+border-bottom:#cfcfcf 1px solid;
+
+}
+
+#th{
+border-top:#cfcfcf 1px solid;
+border-bottom:#cfcfcf 1px solid;
+height:35px;
+
+}
+
+#att_table_title{
+position:absolute;
+top:200px;
+left:25px;
+
+}
+#att_table .col1{
+width:10px;
+text-align:center;
+}
+#att_table .col2{
+width:150px;
+text-align:center;
+}
+#att_table .col3{
+width:150px;
+text-align:center;
+}
+#att_table .col4{
+width:250px;
+text-align:center;
+}
+#btn2{
+width:120px;
+margin-top:30px;
+height:35px;
+background-color:#3399cc;
+border:none;
+color:white;
+transition:0.5s;
+}
+#btn2:hover{
+width:120px;
+background:white;
+border:#3399cc 1px solid;
+color:#3399cc;
+transition:0.3s;
+cursor:pointer;
+}
+/*******************************EVENT*****************************************************************/
+#zai{
+	margin-top:100px;
+}
+#event{
+background: linear-gradient(white,#fafafa);
+width:100%;
+margin-top:;
+border-bottom:#3399cc 1px solid;
+margin-top:10px;
+}
+.event_title{
+	text-align:center;
+}
+.event_content{
+	text-align:center;
+	font-family:sans-serif;
+}
+#event:hover{
+	box-shadow:0px 0px 50px -20px #3399cc inset;
+}
+
+/****************************EDITING***SELECTIN***VIEWING***EVENT***************************************/
+#event_frame{
+position:absolute;
+background:white;
+width:;
+height:50px;
+margin-top:25px;
+right:10px;
+left:10px;
+border-bottom:#cfcfcf 1px solid;
+}	  
+#event_title1{
+position:absolute;
+left:30px;
+top:10px;
+background:white;
+height:40px;
+width:100px;
+text-align:center;
+border:#cfcfcf 1px solid;
+border-bottom:none;
+}
+#event_title2{
+color:white;
+position:absolute;
+left:170px;
+top:10px;
+background:#cfcfcf;
+height:30px;
+width:100px;
+text-align:center;
+border:#cfcfcf 1px solid;
+border-bottom:none;
+}
+#event_title3{
+color:white;
+position:absolute;
+left:310px;
+top:10px;
+background:#cfcfcf;
+height:30px;
+width:100px;
+text-align:center;
+border:#cfcfcf 1px solid;
+border-bottom:none;
+}
+.event_title_text a{
+vertical-align:-20px;
+font-family:sans-serif;
+font-size:14;
+}
+
+	
+#tab1{
+	position:absolute;
+	visibility:visible;
+	background:;
+	width:100%;
+	height:100%;
+	
+}
+
+#tab2{
+	position:absolute;
+	visibility:hidden;
+	background:white;
+	width:100%;
+	height:100%;
+}
+#tab3{
+	position:absolute;
+	visibility:hidden;
+	background:white;
+	width:100%;
+	height:100%;
+}
+
+/****************************************************TAB***1***********************/
+#event_td1{
+	width:200px;
+	
+}
+#event_td2{
+	width:25%;
+	
+}#event_td3{
+	width:40%;
+	
+}
+#event_td4{
+	width:10%;
+	
+}
+#tab1 td{
+	border-bottom:#cfcfcf 1px solid;
+	height:40px;
+	text-align:center;
+}
+#tab1 table{
+	border-collapse:collapse;
+	margin:auto;
+	margin-left:25px;
+	margin-right:25px;
+}
+/****************************************************TAB***2***********************/
+#tab2 form{
+	width:100%;
+	background:white;
+	margin-left:25px;
+	
+}
+#tab2 table{
+	margin:auto;
+	margin-left:auto;
+	margin-right:auto;
+	width:80%;
+	border-collapse:collapse;
+	
+}
+#tab2 td{
+	border-bottom:#cfcfcf 1px solid;
+	height:80px;
+}
+#tab2 td:first-child{
+	min-width:15%;
+	text-align:left;
+}
+#tab2 td a:first-child{
+	margin-left:25px;
+}
+
+#tab2 td:last-child{
+	width:50%;
+	height:35px;
+}
+#tab2 input{
+	width:300px;
+	height:35px;
+	opacity:;
+}
+#tab2 textarea{
+	width:300px;
+	height:35px;
+}
+#btnframe{
+	position:relative;
+	background:;
+	height:100%;
+	width:100%;
+	margin-top:40px;
+	margin-bottom:auto;
+}
+#btn{
+	position:absolute;
+	opacity:0;
+	top:0;
+	left:0;
+}
+
+#btnf{
+	position:absolute;
+	top:0;
+	left:0;
+	width:300px;
+	height:35px;
+	background:#3399cc;
+	color:white;
+	border:none;
+	
+}
+#btn3{
+	margin-top:70px;
+	background:#3399cc;
+	color:white;
+	border-bottom:;
+	transition:0.3s;
+}
+#btn3:hover{
+	background:white;
+	color:#3399cc;
+	border:#3399cc 1px solid;
+	transition:0.3s;
+	
+}
+
+/***************************************TAB***3***********************************************************/
+#tab3 td{
+	border-bottom:#cfcfcf 1px solid;
+	height:40px;
+	text-align:center;
+}
+#tab3 table{
+	border-collapse:collapse;
+	margin:auto;
+	margin-left:25px;
+	margin-right:25px;
+}
+
+#etd1{
+	
+	
+}
+#etd2{
+}
+	
+#eta{
+	width:300px;
+	transition:0;
+}
+#eta:focus{
+	
+	transition:0;
+}
+
+
+#event_td1 input{
+	border:none;
+	background:none;
+	text-align:center;
+	width:100%;
+	height:100px;
+	
+	
+}
+#event_td1 input:focus{
+	
+	box-shadow:0px 0px 20px -5px #3399cc inset;
+	outline-width:none;
+	outline-color:white;
+	transition:0.3;
+	
+}
+#event_td2 input{
+	border:none;
+	background:none;
+	text-align:center;
+	width:100%;
+	height:100px;
+	
+	
+}
+#event_td2 input:focus{
+	
+	box-shadow:0px 0px 20px -5px #3399cc inset;
+	outline-width:none;
+	outline-color:white;
+	transition:0.3;
+	
+	
+}
+#event_td3 input{
+	border:none;
+	background:none;
+	text-align:center;
+	resize:none;
+	width:100%;
+	height:100px;
+	
+	
+}
+#event_td3 input:focus{
+	
+	box-shadow:0px 0px 20px -5px #3399cc inset;
+	outline-width:none;
+	outline-color:white;
+	transition:0;
+	
+}
+#event_td4{
+	position:relative;
+}
+#event_td4 input{
+	border:none;
+	background:none;
+	text-align:center;
+	width:100%;
+	height:100%;
+	position:absolute;
+	opacity:0;
+	top:0;
+	left:0;
+	
+	
+}
+#event_td4 input:focus{
+	
+	box-shadow:0px 0px 20px -5px #3399cc inset;
+	outline-width:none;
+	outline-color:white;
+	transition:0.3s;
+	
+}
+.fakebtn{
+	background:#3399cc;
+	color:white;
+	width:100%;
+	height:40px;
+	text-align:center;
+	
+	
+}
+.fakebtn a{
+	vertical-align:-25px;
+}
+
+#ebtn{
+	margin-top:;
+	background:#3399cc;
+	color:white;
+	border:none;
+	height:80px;
+	
+}
+#ebtn:hover{
+	background:white;
+	color:#3399cc;
+	border:#3399cc 1px solid;
+	
+}
+/*************************************Attendance***************window***********************/
+
+#attInsertRow td{
+	text-align:center;
+	border-bottom:#cfcfcf 1px solid;
+	
+}
+#attInsertRow a{
+	vertical-align:10px;
+	
+}
+
+
+	
+/*************************************Attendance***************TAB***1***********************/	  
+
+#attSelectDate{
+	float:left;
+	margin-left:25px;
+}
+#attSelectDate input{
+	height:40px;
+	width:150px;
+}
+#attSelectClass{
+	float:left;
+	margin-left:75px;
+	height:40px;
+	width:150px;
+	
+}
+
+#tab1 input{
+	margin-top:25px;
+}	  	  
+#attSelectClass select{
+	height:40px;
+	width:150px;
+	margin-top:25px;
+	
+}
+
+#attBtn{
+	margin-top:43px;
+	margin-left:75px;
+	color:white;
+	background:#3399cc;
+	border:none;
+	width:150px;
+	height:40px;
+}
+#attBtn:hover{
+	color:#3399cc;
+	background:white;
+	border:#3399cc 1px solid;
+}
+#codeRow{
+	width:15%;
+}
+#nameRow{
+	width:15%;
+}
+#classRow{
+	width:15%;
+}
+#insertRow{
+	height:25px;
+}
+#insertRow a{
+	vertical-align:10px;
+}
+			  
+/*************************************editing*******attendance*********************************************************/	  
+#editform table{
+	margin-left:25px;
+	border-collapse:collapse;
+	 
+}
+#editform th{
+	text-align:center;
+	height:60px;
+	border-bottom:#cfcfcf 1px solid;
+	 
+}
+#editform td{
+	text-align:center;
+	height:40px;
+	border-top:#cfcfcf 1px solid;	
+	border-bottom:#cfcfcf 1px solid;
+	 
+}
+#editform table input{
+	text-align:center;
+	border:none;
+}	
+#submenu1{
+	visibility:hidden;
+	height:0px;
+	background:grey;
+	margin-left:35px;
+}
+
+#submenu2{
+	visibility:hidden;
+	height:0px;
+	background:grey;
+	
+}
+#submenu3{
+	visibility:hidden;
+	height:0px;
+	background:grey;
+	
+}
+#submenu4{
+	visibility:hidden;
+	height:0px;
+	background:grey;
+	
+}
+#submenu1 a{
+	margin-left:35px;
+}	  
+#submenu2 a{
+	margin-left:35px;
+}	  
+ #submenu3 a{
+	margin-left:35px;
+}
+ #submenu4 a{
+	margin-left:35px;
+}
+/**************EXAM****************/
+#esm1,#esm2,#esm3,#esm4{
+	visibility:hidden;
+	height:0px;
+}
+
+#esm1 a,#esm2 a,#esm3 a,#esm4 a{
+	margin-left:35px;
+}		 
+	  
+/******************************************XAHGAI******************************/
+      #selectCB {
           position: absolute;
-          background: #3399cc;
-          width: 300px;
-          height: 100%;
-          box-sizing: border-box;
-          -moz-box-sizing: border-box;
-      }
-      #sidebar ul {
-          margin: 0;
-          padding: 0;
-          list-style: none;
-      }
-      #sidebar ul li {
-          margin: 0;
-      }
-      #sidebar ul li a {
-          padding: 15px 20px;
-          font-size: 16px;
-          font-weight: 100;
-          color: white;
-          text-decoration: none;
-          display: block;
-          border-bottom: 1px solid #567;
-          -webkit-transition:  background 0.3s ease-in-out;
-          -moz-transition:  background 0.3s ease-in-out;
-          -ms-transition:  background 0.3s ease-in-out;
-          -o-transition:  background 0.3s ease-in-out;
-          transition:  background 0.3s ease-in-out;
-      }
-      #sidebar ul li:hover a {
-          background: #FAFAFA;
-		  color:#3399cc;
-      }
-      .main-content {
-          width: 100%;
-          height: 100%;
-          padding: 10px 10px 10px 260px;
-          box-sizing: border-box;
-          position: relative;
-      }
-      /*********************Header****************************/
-      
-      #header{
-          width:100%;
-          height:80px;
-          background:linear-gradient(white,#fafafa);
-          position:absolute;
-          top:0;
-          left:0;
-          z-index:999;
-          box-shadow:1px -5px 20px;
-      }
-      #logo{
-          margin-top:10px;
-      }
-      #a1{
-          vertical-align:18px;
-          font-size:23px;
-          font-family:sans-serif;
-      }
-      #a2{
-          margin-left:10px;
-          font-size:15px;
-          vertical-align:15px;
-          font-family:sans-serif;
-      }
-      #user{
-          position:absolute;
-          right:20px;
-          top:20px;
-      }
-
-      #hangai{
-          border-radius:10em;
-      }
-
-      /*********************Header****END***************************************/
-      #main{
-          background:white;
-          position:absolute;
-          left:350px;
           top:120px;
-          min-width:;
-          right:25px;
-          height:100%;
+          left:450px;
       }
-      #att_frame{
-          position:absolute;
-          background:white;
-          width:;
-          height:50px;
+	  #xbtn1{
+		  background:#3399cc;
+		  border:none;
+		  width:150px;
+		  height:30px;
+		  color:white;
+		  left:635px;
+		  top:174px;
+		  position:absolute;
+	  }
+	   #selectCB select{
           margin-top:25px;
-          right:10px;
-          left:10px;
-          border-bottom:#cfcfcf 1px solid;
       }
-      #att_title{
-          color:black;
-          margin-left:30px;
-          margin-top:10px;
-          background:white;
-          height:40px;
-          width:100px;
-          text-align:center;
-          border:#cfcfcf 1px solid;
-          border-bottom:none;
+      #selectCB a {
+          vertical-align: 15px;
       }
-      #att_title a{
-          vertical-align:-25px;
-          font-family:sans-serif;
-          font-size:14;
+      #selectCB select {
+          height:30px;
+          width:130px;
       }
-      /************SELECTING***DATE**********SELECTING***CLASS********STARTS***************************/
-
-      #currentDate{
+      #tab2CB {
           position:absolute;
           top:120px;
-          left:25px;
+          left:50px;
       }
-      #currentDate a{
-          color:;
-          vertical-align:15px;
+      #tab2CB select {
+          height:30px;
+          width:130px;
+      }
+
+      #tab3CB {
+          position:absolute;
+          top:120px;
+          left:50px;
+      }
+      #tab3CB select {
+          height:30px;
+          width:130px;
+      }
+
+      #tab2btn {
+          position: absolute;
+          top:138px;
+          left:250px;
+          height:30px;
+          background-color:#3399cc;
+          border:none;
+          color:white;
+          transition:0.5s;
+      }
+      #tab2btn:hover{
+          cursor:pointer;
+          background:white;
+          border:#3399cc 1px solid;
+          color:#3399cc;
+          transition:0.3s;
 
       }
-      #selectClass a{
-          color:;
-          vertical-align:15px;
+      #tab3btn {
+          position: absolute;
+          top:144px;
+          left:250px;
+          height:30px;
+          background-color:#3399cc;
+          border:none;
+          color:white;
+          transition:0.5s;
+      }
+      #tab3btn:hover{
+          cursor:pointer;
+          background:white;
+          border:#3399cc 1px solid;
+          color:#3399cc;
+          transition:0.3s;
 
       }
-      #selectClass select{
+      #hwedit {
+          position: absolute;
+          width:100px;
+          height:30px;
+          background-color:#3399cc;
+          border:none;
+          color:white;
+          transition:0.5s;
+      }
+      #hwedit:hover{
+          cursor:pointer;
+          background:white;
+          border:#3399cc 1px solid;
+          color:#3399cc;
+          transition:0.3s;
+
+      }
+
+      #stselect {
+          position: absolute;
+          top:120px;
+          left:60px;
+      }
+      #stselect a{
+          vertical-align:10px;
+
+      }
+      #stselect select{
           border:#cfcfcf 1px solid;
           height:30px;
           width:130px;
       }
-      #main input{
+      #stbtn1 {
+          position: absolute;
+          top:144px;
+          left:250px;
+          width:100px;
+          height:30px;
+          background-color:#3399cc;
+          border:none;
+          color:white;
+          transition:0.5s;
+      }
+      #stbtn1:hover{
+          cursor:pointer;
+          background:white;
+          border:#3399cc 1px solid;
+          color:#3399cc;
+          transition:0.3s;
+
+      }
+
+#registration a {
+    margin-left:120px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+#registration input {
+    margin-left:120px;
+    margin-top:20px;
+    margin-bottom:20px;
+    height:40px;
+    width:250px;
+}
+#registration select {
+    border:#cfcfcf 1px solid;
+    margin-left:120px;
+    margin-top:20px;
+    margin-bottom:20px;
+    height:40px;
+    width:250px;
+}
+      #stbtn2 {
+          position: absolute;
+            margin-left:120px;
+          margin-top:20px;
+          margin-bottom:20px;
+          width:100px;
+          height:40px;
+          background-color:#3399cc;
+          border:none;
+          color:white;
+          transition:0.5s;
+      }
+      #stbtn2:hover{
+          cursor:pointer;
+          background:white;
+          border:#3399cc 1px solid;
+          color:#3399cc;
+          transition:0.3s;
+
+      }
+      #stbtn3 {
+          position: absolute;
+          top:144px;
+          left:250px;
+          width:100px;
+          height:30px;
+          background-color:#3399cc;
+          border:none;
+          color:white;
+          transition:0.5s;
+      }
+      #stbtn3:hover{
+          cursor:pointer;
+          background:white;
+          border:#3399cc 1px solid;
+          color:#3399cc;
+          transition:0.3s;
+
+      }
+      #stselect1 {
+          position: absolute;
+          top:120px;
+          left:60px;
+      }
+      #tab3 a{
+          vertical-align:10px;
+
+      }
+      #tab3 select{
           border:#cfcfcf 1px solid;
           height:30px;
-          width:140px;
+          width:130px;
       }
-      #selectClass{
-          position:absolute;
-          top:120px;
-          left:250px;
-      }
-      #btn1{
-          position:absolute;
-          top:148px;
-          left:500px;
+      #stedit {
+          position: absolute;
+          width:100px;
           height:30px;
           background-color:#3399cc;
           border:none;
           color:white;
           transition:0.5s;
       }
-      #btn1:hover{
-		  cursor:pointer;
+      #stedit:hover{
+          cursor:pointer;
           background:white;
           border:#3399cc 1px solid;
           color:#3399cc;
           transition:0.3s;
 
       }
-      /************SELECTING**********DATE**********SELECTING**********CLASS********ENDS***************************/
 
-      #att_table{
-          position:absolute;
-          top:230px;
-          left:25px;
-          border-collapse:collapse;
-      }
-      #att_table input[type="radio"]{
-          height:15px;
-          width:15px;
-
-      }
-
-      #att_table tr:last-child{
-          height:35px;
-          border-bottom:white 11px solid;
-
-
-      }
-      #att_table td{
-          height:35px;
-          border-bottom:#cfcfcf 1px solid;
-
-      }
-
-      #th{
-          border-top:#cfcfcf 1px solid;
-          border-bottom:#cfcfcf 1px solid;
-          height:35px;
-
-      }
-
-      #att_table_title{
-          position:absolute;
-          top:200px;
-          left:25px;
-
-      }
-      #att_table .col1{
-          width:10px;
-          text-align:center;
-      }
-      #att_table .col2{
-          width:150px;
-          text-align:center;
-      }
-      #att_table .col3{
-          width:150px;
-          text-align:center;
-      }
-      #att_table .col4{
-          width:250px;
-          text-align:center;
-      }
-      #btn2{
-		  width:120px;
-          margin-top:30px;
-          height:35px;
+#csa {
+    top:100px;
+    margin-left:70px;
+}
+#cstf {
+    margin-top:20px;
+    margin-left:70px;
+}
+#csis {
+    position: absolute;
+    margin-left:70px;
+    margin-top:20px;
+    width:100px;
+    height:30px;
+    background-color:#3399cc;
+    border:none;
+    color:white;
+    transition:0.5s;
+}
+#csis:hover {
+    cursor:pointer;
+    background:white;
+    border:#3399cc 1px solid;
+    color:#3399cc;
+    transition:0.3s;
+}
+      #csedit {
+          margin-top:20px;
+          width:100px;
+          height:30px;
           background-color:#3399cc;
           border:none;
           color:white;
           transition:0.5s;
       }
-      #btn2:hover{
-		  width:120px;
+      #csedit:hover {
+          cursor:pointer;
           background:white;
           border:#3399cc 1px solid;
           color:#3399cc;
           transition:0.3s;
-		  cursor:pointer;
       }
+      #tchregister input {
+          margin-left:150px;
+          margin-top:20px;
+          margin-bottom:20px;
+        width:200px;
+          height:30px;
+             }
+      #tchregister a {
+          margin-left:150px;
+          margin-top:20px;
+          margin-bottom:20px;
+      }
+    #tchinsert {
+        margin-top:20px;
+        margin-left:150px;
+        width:100px;
+        height:30px;
+        background-color:#3399cc;
+        border:none;
+        color:white;
+        transition:0.5s;
+    }
+      #tchinsert:hover {
+          cursor:pointer;
+          background:white;
+          border:#3399cc 1px solid;
+          color:#3399cc;
+          transition:0.3s;
+      }
+      #tchedit{
+          margin-top:20px;
+          width:100px;
+          height:30px;
+          background-color:#3399cc;
+          border:none;
+          color:white;
+          transition:0.5s;
+      }
+      #tchedit:hover {
+          cursor:pointer;
+          background:white;
+          border:#3399cc 1px solid;
+          color:#3399cc;
+          transition:0.3s;
+      }
+#hwinsert {
+    width:120px;
+    margin-top:30px;
+    height:35px;
+    background-color:#3399cc;
+    border:none;
+    color:white;
+    transition:0.5s;
+}
+#hwinsert:hover{
+    width:120px;
+    background:white;
+    border:#3399cc 1px solid;
+    color:#3399cc;
+    transition:0.3s;
+    cursor:pointer;
+}
+      /*                asdsadad END*/	  
+	  
+ #actsub1{
+		  visibility:hidden;
+		  background:grey;
+		  height:0px;
+		  
+	  }
+	    #actsub1 a{
+		  margin-left:35px;
+		  
+	  }
+	  #actsub2{
+		  visibility:hidden;
+		  background:grey;
+		  height:0px;
+		  
+	  }
+	    #actsub2 a{
+		  margin-left:35px;
+		  
+	  }	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  

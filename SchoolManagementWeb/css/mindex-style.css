@@ -1,0 +1,584 @@
+body, html {
+height: 100%;
+margin: 0;
+overflow:hidden;
+font-family: helvetica;
+font-weight: 100;
+background:#FAFAFA;
+}
+.container {
+margin-top:80px;
+position: relative;
+height: 100%;
+width: 100%;
+}
+
+#sidebar {
+position: absolute;
+background: #3399cc;
+width: 300px;
+height: 100%;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+}
+#sidebar ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+#sidebar ul li {
+margin: 0;
+}
+#sidebar ul li a {
+padding: 15px 20px;
+font-size: 16px;
+font-weight: 100;
+color: white;
+text-decoration: none;
+display: block;
+border-bottom: 1px solid #567;
+-webkit-transition:  background 0.3s ease-in-out;
+-moz-transition:  background 0.3s ease-in-out;
+-ms-transition:  background 0.3s ease-in-out;
+-o-transition:  background 0.3s ease-in-out;
+transition:  background 0.3s ease-in-out;
+}
+#sidebar ul li:hover a {
+background: #FAFAFA;
+color:#3399cc;
+}
+.main-content {
+width: 100%;
+height: 100%;
+padding: 10px 10px 10px 260px;
+box-sizing: border-box;
+position: relative;
+}
+/*********************Header****************************/
+
+#header{
+width:100%;
+height:80px;
+background:linear-gradient(white,#fafafa);
+position:absolute;
+top:0;
+left:0;
+z-index:999;
+box-shadow:1px -5px 20px;
+}
+#logo{
+margin-top:10px;
+}
+#a1{
+vertical-align:18px;
+font-size:23px;
+font-family:sans-serif;
+}
+#a2{
+margin-left:10px;
+font-size:15px;
+vertical-align:15px;
+font-family:sans-serif;
+}
+#user{
+position:absolute;
+right:20px;
+top:20px;
+}
+
+#hangai{
+border-radius:10em;
+}
+
+/*********************Header****END***************************************/
+#main{
+background:white;
+position:absolute;
+left:350px;
+top:120px;
+min-width:;
+right:25px;
+height:100%;
+overflow-y: auto;
+}
+#att_frame{
+position:absolute;
+background:white;
+width:;
+height:50px;
+margin-top:25px;
+right:10px;
+left:10px;
+border-bottom:#cfcfcf 1px solid;
+}
+#att_title{
+color:black;
+margin-left:30px;
+margin-top:10px;
+background:white;
+height:40px;
+width:100px;
+text-align:center;
+border:#cfcfcf 1px solid;
+border-bottom:none;
+}
+#att_title a{
+vertical-align:-25px;
+font-family:sans-serif;
+font-size:14;
+}
+/************SELECTING***DATE**********SELECTING***CLASS********STARTS***************************/
+
+#currentDate{
+position:absolute;
+top:120px;
+left:25px;
+}
+#currentDate a{
+color:;
+vertical-align:15px;
+
+}
+
+#selectClass a{
+color:;
+vertical-align:15px;
+
+}
+#selectClass select{
+border:#cfcfcf 1px solid;
+height:30px;
+width:130px;
+}
+#main input{
+border:#cfcfcf 1px solid;
+height:30px;
+width:140px;
+}
+
+
+#selectClass{
+position:absolute;
+top:120px;
+left:250px;
+}
+#btn1{
+position:absolute;
+top:148px;
+left:500px;
+height:30px;
+background-color:#3399cc;
+border:none;
+color:white;
+transition:0.5s;
+}
+#btn1:hover{
+cursor:pointer;
+background:white;
+border:#3399cc 1px solid;
+color:#3399cc;
+transition:0.3s;
+}
+/************SELECTING**********DATE**********SELECTING**********CLASS********ENDS***************************/
+
+#att_table{
+position:absolute;
+top:260px;
+left:25px;
+border-collapse:collapse;
+}
+#att_table input[type="radio"]{
+height:15px;
+width:15px;
+
+}
+
+#att_table tr:last-child{
+height:35px;
+border-bottom:white 11px solid;
+
+
+}
+#att_table td{
+height:35px;
+border-bottom:#cfcfcf 1px solid;
+
+}
+
+#th{
+border-top:#cfcfcf 1px solid;
+border-bottom:#cfcfcf 1px solid;
+height:35px;
+
+}
+
+#att_table_title{
+position:absolute;
+top:200px;
+left:25px;
+
+}
+#att_table .col1{
+width:10px;
+text-align:center;
+}
+#att_table .col2{
+width:150px;
+text-align:center;
+}
+#att_table .col3{
+width:150px;
+text-align:center;
+}
+#att_table .col4{
+width:220px;
+text-align:center;
+}
+#att_table .col5{
+width:130px;
+text-align:center;
+}
+#btn2{
+width:120px;
+margin-top:30px;
+height:35px;
+background-color:#3399cc;
+border:none;
+color:white;
+transition:0.5s;
+}
+#btn2:hover{
+width:120px;
+background:white;
+border:#3399cc 1px solid;
+color:#3399cc;
+transition:0.3s;
+cursor:pointer;
+}
+/*******************************EVENT*****************************************************************/
+#zai{
+	margin-top:100px;
+}
+#event{
+background: linear-gradient(white,#fafafa);
+width:100%;
+margin-top:;
+border-bottom:#3399cc 1px solid;
+margin-top:10px;
+}
+.event_title{
+	text-align:center;
+}
+.event_content{
+	text-align:center;
+	font-family:sans-serif;
+	overflow: scroll;
+}
+#event:hover{
+	box-shadow:0px 0px 50px -20px #3399cc inset;
+}
+
+/****************************EDITING***SELECTIN***VIEWING***EVENT***************************************/
+#event_frame{
+position:absolute;
+background:white;
+width:;
+height:50px;
+margin-top:25px;
+right:10px;
+left:10px;
+border-bottom:#cfcfcf 1px solid;
+}	  
+#event_title1{
+position:absolute;
+left:30px;
+top:10px;
+background:white;
+height:40px;
+width:130px;
+text-align:center;
+border:#cfcfcf 1px solid;
+border-bottom:none;
+}
+#event_title2{
+color:white;
+position:absolute;
+left:170px;
+top:10px;
+background:#cfcfcf;
+height:30px;
+width:130px;
+text-align:center;
+border:#cfcfcf 1px solid;
+border-bottom:none;
+}
+#event_title3{
+color:white;
+position:absolute;
+left:310px;
+top:10px;
+background:#cfcfcf;
+height:30px;
+width:130px;
+text-align:center;
+border:#cfcfcf 1px solid;
+border-bottom:none;
+}
+.event_title_text a{
+vertical-align:-20px;
+font-family:sans-serif;
+font-size:14;
+}
+
+	
+#tab1{
+	position:absolute;
+	
+	width:100%;
+	height:100%;
+}
+
+#tab2{
+	position:absolute;
+	
+	width:100%;
+	height:100%;
+}
+#tab3{
+	position:absolute;
+
+	width:100%;
+	height:100%;
+}
+
+/****************************Exam***************************************/
+	  
+	#examDate{
+position:absolute;
+top:120px;
+left:25px;
+}
+#examDate a{
+color:;
+vertical-align:15px;
+
+}
+
+#scoretf{
+	position:absolute;
+top:215px;
+left:400px;
+	
+}
+
+#editedExamDate{
+position:absolute;
+top:190px;
+left:25px;
+}
+#editedExamDate a{
+color:;
+vertical-align:15px;
+
+}
+
+#examName{
+	position: absolute;
+	top: 120px;
+	left: 225px;
+}
+
+#editedFullScore{
+	position: absolute;
+	top: 190px;
+	left: 385px;
+}
+
+#editedExamName{
+	position: absolute;
+	top: 190px;
+	left: 225px;
+}
+
+#className{
+	position: absolute;
+	top: 120px;
+	left: 25px;
+}
+
+#classCombo{
+border:#cfcfcf 1px solid;
+height:30px;
+width:140px;
+margin-top: 10px;
+}
+
+#examCombo{
+border:#cfcfcf 1px solid;
+height:30px;
+width:140px;
+margin-top: 10px;
+}  
+
+#classTf{
+	position: absolute;
+	top: 120px;
+	left: 385px;
+}
+#classCbox{
+border:#cfcfcf 1px solid;
+height:30px;
+width:140px;
+margin-top: 10px;
+}  
+#monthCombo{
+border:#cfcfcf 1px solid;
+height:30px;
+width:140px;
+margin-top: 10px;
+} 
+	  
+#showExamBtn{
+position:absolute;
+top:148px;
+left:570px;
+height:30px;
+width: 120px;
+background-color:#3399cc;
+border:none;
+color:white;
+transition:0.5s;
+}
+#showExamBtn:hover{
+cursor:pointer;
+background:white;
+border:#3399cc 1px solid;
+color:#3399cc;
+transition:0.3s;
+}	  
+	  
+#showStudentBtn{
+position:absolute;
+top:148px;
+left:250px;
+height:30px;
+width: 120px;
+background-color:#3399cc;
+border:none;
+color:white;
+transition:0.5s;
+}
+#showStudentBtn:hover{
+cursor:pointer;
+background:white;
+border:#3399cc 1px solid;
+color:#3399cc;
+transition:0.3s;
+}
+  
+  
+#goingButton{
+position:absolute;
+top:148px;
+left:570px;
+height:30px;
+width: 300px;
+background-color:#3399cc;
+border:none;
+color:white;
+transition:0.5s;
+}
+#goingButton:hover{
+cursor:pointer;
+background:white;
+border:#3399cc 1px solid;
+color:#3399cc;
+transition:0.3s;
+}  
+/***********************************************************************************************************************************/	  
+	  
+#esm1,#esm2,#esm3,#esm4{
+	visibility:hidden;
+	height:0px;
+}
+
+#esm1 a,#esm2 a,#esm3 a,#esm4 a{
+	margin-left:35px;
+}
+
+#submenu1{
+	visibility:hidden;
+	height:0px;
+	background:grey;
+	margin-left:35px;
+}
+
+#submenu2{
+	visibility:hidden;
+	height:0px;
+	background:grey;
+	
+}
+#submenu3{
+	visibility:hidden;
+	height:0px;
+	background:grey;
+	
+}
+#submenu4{
+	visibility:hidden;
+	height:0px;
+	background:grey;
+	
+}
+#submenu1 a{
+	margin-left:35px;
+}	  
+#submenu2 a{
+	margin-left:35px;
+}	  
+ #submenu3 a{
+	margin-left:35px;
+}
+ #submenu4 a{
+	margin-left:35px;
+}		  
+	  
+	 
+
+#done{
+position:absolute;
+top:380px;
+left:620px;
+height:30px;
+width: 120px;
+background-color:#3399cc;
+border:none;
+color:white;
+transition:0.5s;
+}
+#done:hover{
+cursor:pointer;
+background:white;
+border:#3399cc 1px solid;
+color:#3399cc;
+transition:0.3s;
+}	
+
+
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  

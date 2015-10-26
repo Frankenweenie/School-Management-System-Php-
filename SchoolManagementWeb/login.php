@@ -21,7 +21,7 @@
           $run = mysqli_query($conn,$admin_query);
           if(mysqli_num_rows($run)>0){
               $_SESSION['user_name'] = $user_name;
-              echo "<script>window.open('teacher/index.php','_self')</script>";
+              echo "<script>window.open('index.php','_self')</script>";
           }
           else{
               echo "<p style='
